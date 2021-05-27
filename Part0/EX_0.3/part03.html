@@ -1,0 +1,93 @@
+<html>
+<head>
+<style>
+.button {
+ border-radius: 2px;
+  background-color: purple;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h1 {
+color : #E3F80D ;
+text-align: center;
+}
+body  {
+   background-image: linear-gradient(to right top, #051937, #00446b, #00759d, #00abc9, #12e2eb);
+
+ }
+h2 {
+color : black;
+text-align: center;
+}
+/*p {
+background: linear-gradient(to bottom left,lightyellow,yellow,lightyellow); 
+    border-style: double;
+    border-color: black; 
+   padding: 10px;
+    margin: 20px;
+border-width : 5px;
+}*/
+</style>
+<head>
+<h1>Registration form</h1>
+<h2>Fill your details:</h2>
+<body>
+
+<form action="login" method="post">
+<p class="solid">
+<table align="center">
+<br><br>
+
+<tr><td>Name of the student :</td><td><input type="text" name="user"><br></td></tr>
+<tr></tr><tr></tr>
+
+<tr><td>Registered number :</td><td><input type="number" name="registered number"><br></td></tr>
+<tr></tr><tr></tr>
+
+<tr><td>Email id :</td><td><input type="text" name="email id"><br></td></tr>
+<tr></tr><tr></tr>
+
+<tr><td>Address :</td><td>
+<textarea id="address" name="address" color="gray" rows="7" cols="40"></textarea><br></td></tr>
+<tr></tr><tr></tr>
+
+<tr><td><button class="button"><span>Register </span></button></td></tr>
+
+</table>
+</p>
+</form>
+
+</body>
+</html>
